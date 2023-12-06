@@ -44,6 +44,7 @@ class UserController extends Controller
                     'user_id' => $user->id,
                     'address' => $request->address
                 ]);
+                $user->address = $request->address;
             }
 
             return response()->json([
@@ -88,6 +89,7 @@ class UserController extends Controller
                     'user_id' => $user->id,
                     'address' => $request->address
                 ]);
+                $user->address = $request->address;
             }
 
             return response()->json([
